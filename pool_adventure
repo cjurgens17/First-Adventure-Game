@@ -1,0 +1,107 @@
+# Pool Adventures 1
+print('''See if you can get everything ready to go out and do a power-vac!
+Lets get started''')
+print('''Your at the shop!
+Choose one of the following.
+ 1. Get paperwork
+ 2. Ask for shock
+ 3. Look for keys
+ 4. Show Options''')
+choice = True
+choice2 = True
+option = True
+option2 = True
+while choice:
+    choice = input()
+    if choice == '1':
+        print("The paperwork isn't ready yet")
+        continue
+    elif choice == '2':
+        print('Not ideal')
+        continue
+    elif choice == '3':
+        print('Okay, the van is open. Lets get ready to load it up.')
+        break
+    elif choice == '4':
+        print(''' 1. Get paperwork
+ 2. Ask for shock
+ 3. Look for keys
+ 4. Show Options''')
+    else:
+        print('Choose one of the four options available')
+        continue
+
+print('''Choose an option:
+1. Load up on shock
+2. Get the Vac Equipment
+3. Get the paperwork
+4. Show Options''')
+
+while choice2:
+    lbsofshock = [0, 1, 2, 3, 4]
+    choice2 = input().lower()
+    if choice2 == '1':
+        h = sum(lbsofshock)
+        print(h, 'lbs of shock')
+        break
+    elif choice2 == '2':
+        print('Lets wait on this step for now')
+        continue
+    elif choice2 == '3':
+        print('Were not ready for the paperwork just yet')
+        continue
+    elif choice2 == '4':
+        print('''1. Load up on shock
+2. Get the vac equipment
+3. Get the paperwork
+4. Show Options''')
+        continue
+    else:
+        print('Choose one of the four options available')
+        continue
+
+print('Okay, lets keep moving')
+print('''Choose an option
+1. Get the vac equipment
+2. Get the paperwork
+3. Show Options''')
+
+while option:
+    option = input()
+    if option == str(1):
+        print('Great the van is loaded up for today!')
+        break
+    elif option == str(2):
+        print('Were not quite ready for the paperwork just yet')
+        continue
+    elif option == str(3):
+        print('''Choose an option
+1. Get the vac equipment
+2. Get the paperwork
+3. Show Options''')
+        continue
+    else:
+        print('Choose one of the three options available')
+        continue
+
+print('Okay lets get the paperwork and were ready to go out and power-vac')
+print('''Choose an option
+1. Get the paperwork 
+2. Repeat''')
+
+while option2:
+    option2 = input()
+    if option2 == '1':
+        print('All right were all ready to go!')
+        break
+    elif option2 == '2':
+        print('''Choose an option
+1. Get the paperwork 
+2. Repeat''')
+        continue
+    else:
+        print('Choose one of the two options available')
+        continue
+
+print('Lets hit the road and do some power-vacs!')
+print('In the next series of Pool Adventures well go along poolside and get a first-hand look into the dirty work of a pool guy!')
